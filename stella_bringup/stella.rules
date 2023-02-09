@@ -1,6 +1,6 @@
 # set the udev rule , make the rplidar's device_port be fixed by YDLIDAR
 #
-KERNEL=="ttyUSB*", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE:="0777", SYMLINK+="YDLIDAR"
+KERNEL=="ttyUSB*", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", ATTRS{serial}=="0001", MODE:="0777", SYMLINK+="YDLIDAR"
 
 # set the udev rule , make the AHRS's device_port be fixed by AHRS
 #
